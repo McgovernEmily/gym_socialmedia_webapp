@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifting-Gym</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    
+    <!---The Navigation Bar-->
+    <nav>
+        <div>
+            <a href="index.html">Lifting-Gym</a>
+        </div>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="group.html">Groups</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </nav>
+
+    <!--The Side bar that will show the badges and Workout log-->
+    <div class="container">
+
+        <!-- LEFT SIDEBAR -->
+        <section id="side-badges">
+            <h2>Profile</h2>
+            <p>@username</p>
+
+            <h2>Workout Today</h2>
+            <p>Bench: 5x5</p>
+            <p>Squat: 3x8</p>
+        </section>
+
+        <!-- CENTER FEED -->
+        <section id="posts">
+
+            <!-- CREATE POST -->
+            <div class="create-post">
+                <h3>Create a Post</h3>
+                <textarea id="postText" placeholder="Share what's on your mind or lift..."></textarea>
+                <input id="liftType" placeholder="Lift Type (Bench, Squat, Deadlift)">
+                <button id="postbutton">Post</button>
+            </div>
+
+            <!-- POST 1 -->
+            <div class="post-card">
+                <div class="post-header">
+                    <img src="images/barbell.jpg" alt="profile">
+                    <strong>@lifter1</strong>
+                </div>
+
+                <p>New PR! 315lb Bench 💪</p>
+                <img class="post-img" src="https://via.placeholder.com/500x300" alt="lift">
+
+                <div class="post-actions">
+                    ❤️ 24 Likes • 💬 5 Comments
+                </div>
+            </div>
+
+        </section>
+
+        <!-- RIGHT SIDEBAR -->
+        <section id="right-sidebar">
+            <h2>Badges</h2>
+
+            <div class="badge">🏅 First PR</div>
+            <div class="badge">🏅 100 Workouts</div>
+            <div class="badge">🏅 1 Year Streak</div>
+
+            <h2>Suggested Lifters</h2>
+            <p>@strongguy</p>
+            <p>@powerqueen</p>
+        </section>
+
+    </div>
+
+    <script src="scriptindex.js"></script>
+    
+</body>
+</html>

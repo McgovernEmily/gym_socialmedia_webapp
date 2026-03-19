@@ -1,0 +1,24 @@
+{
+  "name": "gym_socialmedia_webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McgovernEmily/gym_socialmedia_webapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/McgovernEmily/gym_socialmedia_webapp/issues"
+  },
+  "homepage": "https://github.com/McgovernEmily/gym_socialmedia_webapp#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
