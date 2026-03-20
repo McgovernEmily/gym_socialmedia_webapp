@@ -26,8 +26,24 @@
         <section id="side-workout">
             <h2>Workout</h2>
             <p>Add your workout for today</p>
-            <p>Bench: 5x5</p>
-            <p>Squat: 3x8</p>
+
+            <h3>Type (select all that apply):</h3>
+            <label><input type="checkbox" value = "Chest" class="muscle">Chest</label>
+            <label><input type="checkbox" value = "Back" class="muscle">Back</label>
+            <label><input type="checkbox" value = "Arms" class="muscle">Arms</label>
+            <label><input type="checkbox" value = "Legs" class="muscle">Legs</label>
+            <label><input type="checkbox" value = "Abs" class="muscle">Abs</label>
+            <label><input type="checkbox" value = "Shoulder" class="muscle">Shoulders</label>
+            
+            <h3>Workout Details:</h3>
+            <textarea id="workout-details" placeholder="Example: Bench 3x8, Shoulder Press 3x8..."></textarea>
+
+            <button id="save-workout">Save Workout</button>
+
+            <h3>Today's Workout</h3>
+            <p id="type-display"></p>
+            <p id="workout-display"></p>
+
         </section>
 
         <!-- CENTER FEED -->
@@ -39,28 +55,43 @@
                 <img class="profile-holder" src="images/barbell.jpg" alt="profile-holder">
                 <strong>@username</strong>
             </div>
+            <div class="stats">
+                <h2>Stats</h2>
+                <p id="total-workouts">Total Workouts: 0</p>
+                <p id="streak">🔥 Streak: 0 days</p>
+            </div>
 
             <div class="new-prs">
+                <h2>Personal Records</h2>
 
-                <h2>New PRs</h2>
+                <label>Bench (lbs)</label>
+                <input type="number" id="bench-pr">
 
-                <h3>Bench</h3>
+                <label>Squat (lbs)</label>
+                <input type="number" id="squat-pr">
 
-                <h3>Squat</h3>
+                <label>Deadlift (lbs)</label>
+                <input type="number" id="deadlift-pr">
 
-                <h3>Deadlift</h3>
+                <button id="save-prs">Save PRs</button>
 
+                <h3>Your PRs:</h3>
+                <p id="bench-display"></p>
+                <p id="squat-display"></p>
+                <p id="deadlift-display"></p>
             </div>
 
             <div class="Badges">
-
                 <h2>Badges Achieved</h2>
+                <div id="badge-list"></div>
             </div>
 
 
         </section>
 
     </div>
+
+    <script src="scripts/profile.js"></script>
     
 </body>
 </html>

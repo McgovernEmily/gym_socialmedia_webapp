@@ -1,0 +1,349 @@
+{
+  "badges": [
+    {
+      "id": "first_lift",
+      "name": "First Lift",
+      "description": "Logged your first workout",
+      "category": "milestone",
+      "criteria": { "workoutsLogged": 1 }
+    },
+    {
+      "id": "plate_club",
+      "name": "Plate Club",
+      "description": "Lift 135 lbs",
+      "category": "strength",
+      "criteria": { "weight": 135 }
+    },
+    {
+      "id": "two_plate_club",
+      "name": "Two Plate Club",
+      "description": "Lift 225 lbs",
+      "category": "strength",
+      "criteria": { "weight": 225 }
+    },
+    {
+      "id": "three_plate_club",
+      "name": "Three Plate Club",
+      "description": "Lift 315 lbs",
+      "category": "strength",
+      "criteria": { "weight": 315 }
+    },
+    {
+      "id": "four_plate_beast",
+      "name": "Four Plate Beast",
+      "description": "Lift 405 lbs",
+      "category": "strength",
+      "criteria": { "weight": 405 }
+    },
+    {
+      "id": "half_ton_hero",
+      "name": "Half-Ton Hero",
+      "description": "Lift 500+ lbs",
+      "category": "strength",
+      "criteria": { "weight": 500 }
+    },
+    {
+      "id": "3_day_streak",
+      "name": "3-Day Streak",
+      "description": "Workout 3 days in a row",
+      "category": "consistency",
+      "criteria": { "streakDays": 3 }
+    },
+    {
+      "id": "weekly_warrior",
+      "name": "Weekly Warrior",
+      "description": "5 workouts in one week",
+      "category": "consistency",
+      "criteria": { "weeklyWorkouts": 5 }
+    },
+    {
+      "id": "monthly_machine",
+      "name": "Monthly Machine",
+      "description": "20 workouts in a month",
+      "category": "consistency",
+      "criteria": { "monthlyWorkouts": 20 }
+    },
+    {
+      "id": "no_days_off",
+      "name": "No Days Off",
+      "description": "30-day workout streak",
+      "category": "consistency",
+      "criteria": { "streakDays": 30 }
+    },
+    {
+      "id": "pump_chaser",
+      "name": "Pump Chaser",
+      "description": "10,000 lbs in a workout",
+      "category": "volume",
+      "criteria": { "workoutVolume": 10000 }
+    },
+    {
+      "id": "iron_marathon",
+      "name": "Iron Marathon",
+      "description": "50,000 lbs in a week",
+      "category": "volume",
+      "criteria": { "weeklyVolume": 50000 }
+    },
+    {
+      "id": "beast_mode",
+      "name": "Beast Mode",
+      "description": "100,000 lbs in a month",
+      "category": "volume",
+      "criteria": { "monthlyVolume": 100000 }
+    },
+    {
+      "id": "high_rep_hero",
+      "name": "High Rep Hero",
+      "description": "100 reps in one exercise",
+      "category": "volume",
+      "criteria": { "reps": 100 }
+    },
+    {
+      "id": "pr_crusher",
+      "name": "PR Crusher",
+      "description": "Hit a new personal record",
+      "category": "skill",
+      "criteria": { "newPR": true }
+    },
+    {
+      "id": "first_post",
+      "name": "First Post",
+      "description": "Shared your first workout",
+      "category": "social",
+      "criteria": { "posts": 1 }
+    },
+    {
+      "id": "motivator",
+      "name": "Motivator",
+      "description": "Get 10 likes on a post",
+      "category": "social",
+      "criteria": { "likes": 10 }
+    },
+    {
+      "id": "influencer",
+      "name": "Influencer",
+      "description": "Get 100 likes on a post",
+      "category": "social",
+      "criteria": { "likes": 100 }
+    },
+    {
+      "id": "gym_buddy",
+      "name": "Gym Buddy",
+      "description": "Workout with a tagged friend",
+      "category": "social",
+      "criteria": { "taggedFriends": 1 }
+    },
+    {
+      "id": "goal_setter",
+      "name": "Goal Setter",
+      "description": "Create your first goal",
+      "category": "goals",
+      "criteria": { "goalsCreated": 1 }
+    },
+    {
+      "id": "goal_crusher",
+      "name": "Goal Crusher",
+      "description": "Achieve a goal",
+      "category": "goals",
+      "criteria": { "goalsCompleted": 1 }
+    },
+    {
+      "id": "transformation",
+      "name": "Transformation",
+      "description": "Upload progress photos over time",
+      "category": "goals",
+      "criteria": { "progressPhotos": 2 }
+    },
+    {
+      "id": "leg_day_survivor",
+      "name": "Leg Day Survivor",
+      "description": "Complete a leg workout",
+      "category": "fun",
+      "criteria": { "legWorkouts": 1 }
+    },
+    {
+      "id": "never_skip_leg_day",
+      "name": "Never Skip Leg Day",
+      "description": "Complete 10 leg workouts",
+      "category": "fun",
+      "criteria": { "legWorkouts": 10 }
+    },
+    {
+      "id": "night_owl",
+      "name": "Night Owl Lifter",
+      "description": "Workout after 10 PM",
+      "category": "fun",
+      "criteria": { "workoutTime": "night" }
+    },
+    {
+      "id": "early_bird",
+      "name": "Early Bird",
+      "description": "Workout before 6 AM",
+      "category": "fun",
+      "criteria": { "workoutTime": "morning" }
+    },
+    {
+      "id": "profile_complete",
+      "name": "Profile Complete",
+      "description": "Fill out your profile",
+      "category": "engagement",
+      "criteria": { "profileCompleted": true }
+    },
+    {
+      "id": "veteran",
+      "name": "Veteran",
+      "description": "Use the app for 1 year",
+      "category": "engagement",
+      "criteria": { "daysActive": 365 }
+    },
+  
+    {
+    "id": "five_workouts",
+    "name": "Getting Started",
+    "description": "Log 5 workouts",
+    "category": "milestone",
+    "criteria": { "workoutsLogged": 5 }
+  },
+  {
+    "id": "ten_workouts",
+    "name": "Consistent",
+    "description": "Log 10 workouts",
+    "category": "milestone",
+    "criteria": { "workoutsLogged": 10 }
+  },
+  {
+    "id": "fifty_workouts",
+    "name": "Dedicated",
+    "description": "Log 50 workouts",
+    "category": "milestone",
+    "criteria": { "workoutsLogged": 50 }
+  },
+  {
+    "id": "hundred_workouts",
+    "name": "Gym Rat",
+    "description": "Log 100 workouts",
+    "category": "milestone",
+    "criteria": { "workoutsLogged": 100 }
+  },
+
+  {
+    "id": "one_week_streak",
+    "name": "7-Day Streak",
+    "description": "Workout 7 days in a row",
+    "category": "consistency",
+    "criteria": { "streakDays": 7 }
+  },
+  {
+    "id": "two_week_streak",
+    "name": "14-Day Streak",
+    "description": "Workout 14 days in a row",
+    "category": "consistency",
+    "criteria": { "streakDays": 14 }
+  },
+
+  {
+    "id": "bench_specialist",
+    "name": "Bench Specialist",
+    "description": "Log 10 chest workouts",
+    "category": "skill",
+    "criteria": { "chestWorkouts": 10 }
+  },
+  {
+    "id": "back_builder",
+    "name": "Back Builder",
+    "description": "Log 10 back workouts",
+    "category": "skill",
+    "criteria": { "backWorkouts": 10 }
+  },
+  {
+    "id": "arm_day_king",
+    "name": "Arm Day King",
+    "description": "Log 10 arm workouts",
+    "category": "skill",
+    "criteria": { "armWorkouts": 10 }
+  },
+
+  {
+    "id": "double_pr",
+    "name": "Double PR",
+    "description": "Hit 2 PRs in one session",
+    "category": "skill",
+    "criteria": { "multiPR": 2 }
+  },
+  {
+    "id": "triple_pr",
+    "name": "Triple PR",
+    "description": "Hit 3 PRs in one session",
+    "category": "skill",
+    "criteria": { "multiPR": 3 }
+  },
+
+  {
+    "id": "lightweight",
+    "name": "Lightweight Baby",
+    "description": "Lift 95 lbs",
+    "category": "strength",
+    "criteria": { "weight": 95 }
+  },
+  {
+    "id": "five_plate_monster",
+    "name": "Five Plate Monster",
+    "description": "Lift 495 lbs",
+    "category": "strength",
+    "criteria": { "weight": 495 }
+  },
+
+  {
+    "id": "commenter",
+    "name": "First Comment",
+    "description": "Comment on a post",
+    "category": "social",
+    "criteria": { "comments": 1 }
+  },
+  {
+    "id": "social_butterfly",
+    "name": "Social Butterfly",
+    "description": "Make 10 posts",
+    "category": "social",
+    "criteria": { "posts": 10 }
+  },
+
+  {
+    "id": "early_grinder",
+    "name": "Early Grinder",
+    "description": "Workout 5 times before 6 AM",
+    "category": "fun",
+    "criteria": { "morningWorkouts": 5 }
+  },
+  {
+    "id": "late_grinder",
+    "name": "Late Grinder",
+    "description": "Workout 5 times after 10 PM",
+    "category": "fun",
+    "criteria": { "nightWorkouts": 5 }
+  },
+
+  {
+    "id": "weekend_warrior",
+    "name": "Weekend Warrior",
+    "description": "Workout on a weekend",
+    "category": "fun",
+    "criteria": { "weekendWorkouts": 1 }
+  },
+
+  {
+    "id": "volume_rookie",
+    "name": "Volume Rookie",
+    "description": "Lift 5,000 lbs in a workout",
+    "category": "volume",
+    "criteria": { "workoutVolume": 5000 }
+  },
+  {
+    "id": "volume_beast",
+    "name": "Volume Beast",
+    "description": "Lift 200,000 lbs in a month",
+    "category": "volume",
+    "criteria": { "monthlyVolume": 200000 }
+  }
+]
+}

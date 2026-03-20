@@ -176,3 +176,43 @@ nav a:hover {
     padding: 15px;
     border-radius: 10px;
 }
+input {
+    width: 100%;
+    margin: 5px 0 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stats {
+    margin-top: 20px;
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.badge {
+    background: linear-gradient(135deg, #ff4d4d, #ff944d);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+#badge-list .badge {
+    background: linear-gradient(135deg, #ff4d4d, #ff944d);
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 8px;
+    font-weight: bold;
+}
