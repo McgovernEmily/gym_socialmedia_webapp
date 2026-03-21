@@ -33,7 +33,7 @@ let prs = {
   deadlift: 0
 };
 
-// User stats (you can expand this later)
+// User stats (will expand later)
 let userStats = {
   workoutsLogged: 0,
   streakDays: 0,
@@ -118,7 +118,13 @@ function checkBadges() {
 
 // Getting the posts
 app.get("/api/posts", (req, res) => {
-  res.json(posts)
+  const type = req.query.type;
+
+  if (type) {
+    return res.json(posts.filter(p => p.type === type));
+  }
+
+  res.json(posts);
 });
 
 // Workout get
@@ -232,7 +238,8 @@ app.post("/api/posts", (req, res) => {
     username: "username",
     text,
     lift,
-    likes: 0
+    likes: 0,
+    type: req.body.type || "index"
   };
 
   userStats.posts++;

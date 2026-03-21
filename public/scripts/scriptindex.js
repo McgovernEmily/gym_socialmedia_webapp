@@ -7,7 +7,7 @@ const postsSection = document.getElementById("posts");
 
 // Load from the server all the things
 async function loadPosts(){
-    const res = await fetch ("/api/posts");
+    const res = await fetch ("/api/posts?types=index");
     const data = await res.json();
 
     // Keep only the create-post box
@@ -67,7 +67,7 @@ postButton.addEventListener("click", async () => {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ text, lift})
+        body: JSON.stringify({ text, lift, type: "index"})
     });
 
     postText.value ="";

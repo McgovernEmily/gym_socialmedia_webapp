@@ -7,7 +7,7 @@
 </head>
 <body>
     
-    <!---The Navigation Bar-->
+
     <nav>
         <div>
             <a href="index.html">Lifting-Gym</a>
@@ -22,65 +22,52 @@
 
     <div class="group-container">
 
-        <!-- LEFT SIDEBAR -->
+
         <section id="group-sidebar">
-            <a href="group.html">Home</a>
-            <a href="group.html">Groups</a>
+            <h3>Groups</h3>
+            <p># Powerlifters</p>
+            <p># Beginners</p>
         </section>
 
-        <!-- CENTER FEED -->
+
         <section id="group-feed">
 
-            <!-- CREATE POST -->
             <div class="group-main">
-                <h2>Group</h2>
-                <img class="group-profile" src="images/barbell.jpg" alt="profile-holder">
-                <strong>@groupname</strong>
+                <h2>Powerlifting Group</h2>
+                <img class="group-profile" src="images/barbell.jpg">
+                <strong>@powerlifters</strong>
             </div>
 
-            <section id="posts">
+            <section id="group-posts">
 
-                <!-- CREATE POST -->
                 <div class="create-post">
                     <h3>Create a Post</h3>
-                    <textarea placeholder="Share your lift or PR..."></textarea>
-                    <input type="text" placeholder="Lift Type (Bench, Squat, Deadlift)">
-                    <button>Post</button>
+                    <textarea id="groupPostText" placeholder="Share your lift or PR..."></textarea>
+                    <input id="groupLiftType" placeholder="Lift Type">
+                    <button id="groupPostBtn">Post</button>
                 </div>
 
-                <!-- POST 1 -->
-                <div class="post-card">
-                    <div class="post-header">
-                        <img src="images/barbell.jpg" alt="profile">
-                        <strong>@lifter1</strong>
-                    </div>
-
-                    <p>New PR! 315lb Bench 💪</p>
-                    <img class="post-img" src="https://via.placeholder.com/500x300" alt="lift">
-
-                    <div class="post-actions">
-                        ❤️ 24 Likes • 💬 5 Comments
-                    </div>
-                </div>
-            
             </section>
 
         </section>
 
         <section id="right-sidebar">
-
             <h2>Group Info</h2>
 
-            <h3 id="group-name">Name</h3>
-            <h3>Members</h3>
-            <p>@member</p>
-            <p>@member</p>
+            <h3>Name</h3>
+            <p>Powerlifting Group</p>
 
-            <h3 id="group-desc-title">Description</h3>
-            <p id="group-desc">I love lifting</p>
+            <h3>Members</h3>
+            <p>@lifter1</p>
+            <p>@lifter2</p>
+
+            <h3>Description</h3>
+            <p>Track PRs and share progress 💪</p>
         </section>
 
     </div>
-    
+
+    <script src="scripts/group.js"></script>
+ 
 </body>
 </html>
