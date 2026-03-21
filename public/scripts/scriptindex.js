@@ -3,8 +3,6 @@ const postText = document.getElementById("postText");
 const liftType = document.getElementById("liftType");
 const postsSection = document.getElementById("posts");
 
-
-
 // Load from the server all the things
 async function loadPosts(){
     const res = await fetch ("/api/posts?types=index");

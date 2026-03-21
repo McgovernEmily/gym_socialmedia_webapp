@@ -215,3 +215,11 @@ button {
     border-radius: 8px;
     font-weight: bold;
 }
+
+.workout-history {
+    background-color: #1f1f1f;
+    padding: 12px;
+    border-radius: 10px;
+    border-left: 4px solid #ff4d4d;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}

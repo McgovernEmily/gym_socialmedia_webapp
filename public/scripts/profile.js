@@ -1,19 +1,14 @@
 const workoutText = document.getElementById("workout-details")
 const savebutton = document.getElementById("save-workout")
-
 const typedisplay = document.getElementById("type-display")
 const workoutdisplay = document.getElementById("workout-display")
-
 const benchInput = document.getElementById("bench-pr");
 const squatInput = document.getElementById("squat-pr");
 const deadliftInput = document.getElementById("deadlift-pr");
-
 const benchDisplay = document.getElementById("bench-display");
 const squatDisplay = document.getElementById("squat-display");
 const deadliftDisplay = document.getElementById("deadlift-display");
-
 const savePRsBtn = document.getElementById("save-prs");
-
 const badgeList = document.getElementById("badge-list");
 
 
@@ -95,6 +90,7 @@ savePRsBtn.addEventListener("click", async () => {
         })
     });
 
+    loadWorkoutHistory()
     loadBadges();
     loadPRs();
 });
@@ -128,3 +124,27 @@ async function loadBadges() {
 
 // Load badges
 loadBadges();
+loadWorkoutHistory()
+
+async function loadWorkoutHistory() {
+    const res = await fetch("/api/workouts");
+    const data = await res.json();
+
+    const container = document.getElementById("workout-history");
+    container.innerHTML = "";
+
+    // show latest 7 workouts (like you wanted before)
+    const recent = data
+    recent.forEach(workout => {
+        const div = document.createElement("div");
+        div.classList.add("post-card");
+
+        div.innerHTML = `
+            <strong>${new Date(workout.date).toLocaleDateString()}</strong>
+            <p>Type: ${workout.types.join(", ")}</p>
+            <p>${workout.text}</p>
+        `;
+
+        container.appendChild(div);
+    });
+}
