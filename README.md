@@ -41,9 +41,9 @@ To recreate the development environment, you need the following software and/or 
 
 I found these websites useful in developing this software:
 
-* [Introductions to Node]([https://www.geeksforgeeks.org/android/android-creating-a-calendar-view-app/](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs))
-* [CSS Refresher]([https://developer.android.com/kotlin/campaign/learn](https://www.geeksforgeeks.org/css/css-cheat-sheet-a-basic-guide-to-css/))
-* [HTML Refresher]([https://developer.android.com/studio](https://www.geeksforgeeks.org/html/html-cheat-sheet/))
+* [Introductions to Node]((https://nodejs.org/en/learn/getting-started/introduction-to-nodejs))
+* [CSS Refresher]((https://www.geeksforgeeks.org/css/css-cheat-sheet-a-basic-guide-to-css/))
+* [HTML Refresher]((https://www.geeksforgeeks.org/html/html-cheat-sheet/))
 * [JavaScript API]("https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API")
 
 ## Future Work
